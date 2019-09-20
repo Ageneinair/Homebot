@@ -1,0 +1,7 @@
+<launch>
+
+	<node pkg="mask_rcnn_ros" type="mask_rcnn_node" name="mask_rcnn"/>
+
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find mask_rcnn_ros)/rviz/mask_demo.rviz"/>
+
+</launch>

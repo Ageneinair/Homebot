@@ -1,0 +1,69 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+
+<!-- Instituto Superior Tecnico [2017] -->
+
+<world name="isr-testbed">
+
+    <!-- enable/disable shadows, control ambient light -->
+    <scene>
+        <ambient>0.4 0.4 0.4 1.0</ambient>
+        <shadows>0</shadows>
+    </scene>
+
+    <!-- ground -->
+    <include>
+        <uri>model://ground_plane</uri>
+        <material>
+            <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/Orange</name>
+            </script>
+        </material>
+    </include>
+
+    <!-- Global light source -->
+    <include>
+        <uri>model://sun</uri>
+    </include>
+
+    <!-- Directional light source -->
+    <light type="directional" name="directional">
+      <pose>0 0 8 0 0 0</pose>
+      <diffuse>0.3 0.3 0.3 1</diffuse>
+      <specular>.1 .1 .1 1</specular>
+      <attenuation>
+        <range>20</range>
+        <linear>0.01</linear>
+        <constant>0.2</constant>
+        <quadratic>0.0</quadratic>
+      </attenuation>
+      <direction>0 0 -1</direction>
+      <cast_shadows>true</cast_shadows>
+    </light>
+
+    <!-- Set intial camera pose -->
+    <gui fullscreen='0'>
+        <camera name='user_camera'>
+            <pose frame=''>2.766084 1.574471 1.533104 0.0 0.439643 -2.734993</pose>
+            <view_controller>orbit</view_controller>
+            <projection_type>perspective</projection_type>
+        </camera>
+    </gui>
+
+    <!-- :::   Models   ::: -->
+
+    <!-- front table from where objects will be grasped -->
+    <include>
+        <uri>file://isr-testbed/table_bedside</uri>
+        <pose>1.13 0.5785 0.0 0.0 0.0 0.0</pose>
+    </include>
+    
+    <!-- Tea box -->
+    <include>
+        <uri>file://isr-testbed/tea_box</uri>
+        <pose>1.091789 0.634150 0.529551 1.570795 0 0.247593</pose>
+    </include>
+
+</world>
+</sdf>

@@ -1,6 +1,14 @@
 # Homebot
 
-Homebot is a domestic service robots developed by ROS. This robot has two main function: 1. map whole new environment automatically; 2. recognize main functional furnitures and home appliances (eg. tables, refrigerators) and record their positions in the map in the meantime. These two functions is very important for a robot getting into a new environment and "understanding" how this environment looks like and where are those functional objects (for future interaction, such as fetching a Coke from the refrigerator)
+Homebot is a domestic service robots developed by ROS. This robot has two main function:
+1. map whole new environment automatically; 
+2. recognize main functional furnitures and home appliances (eg. tables, refrigerators) and record their positions in the map in the meantime. 
+
+These two functions is very important for a robot getting into a new environment and "understanding" how this environment looks like and where are those functional objects (for future interaction, such as fetching a Coke from the refrigerator)
+
+__**Click**__ below image you can see the result video.
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/lAih0WwKcEY/0.jpg)](https://www.youtube.com/watch?v=lAih0WwKcEY)
 
 ## Install Related Package
 
@@ -13,6 +21,18 @@ Homebot is a domestic service robots developed by ROS. This robot has two main f
 ```
 
 Also need to install [YOLO for ros](https://github.com/leggedrobotics/darknet_ros) and [Mask RCNN for ros](https://github.com/qixuxiang/mask_rcnn_ros)
+
+## Demo
+All tasks are tested in a customized apartment in GAZEBO. The apartment looks like below:
+![](/images/apartment.png)
+
+__**Click**__ below image you can see the robot explor and map the apartment automatically.
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/DRGliFoOi40/0.jpg)](https://www.youtube.com/watch?v=DRGliFoOi40)
+
+__**Click**__ below image you can see how whole pipeline work.
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/XHkAjr_L9BU/0.jpg)](https://www.youtube.com/watch?v=XHkAjr_L9BU)
 
 
 ## Usage

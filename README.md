@@ -17,7 +17,7 @@ Also need to install [YOLO for ros](https://github.com/leggedrobotics/darknet_ro
 
 ## Usage
 
-### gmapping demo:
+##### gmapping demo:
 ```
 roslaunch mbot_gazebo view_mbot_with_laser_kinect.launch
 
@@ -31,19 +31,19 @@ After finished the mapping establish, use this line to save the map data:
 ```
 rosrun map_server map_saver -f cloister_gmapping  # a package in the navigation stack
 ```
-### Navigation demo:
+##### Navigation demo:
 ```
 roslaunch mbot_gazebo view_mbot_with_laser_kinect.launch
 
 roslaunch mbot_navigation nav_cloister_demo.launch
 ```
-### SLAM + Navigation: 
+##### SLAM + Navigation: 
 ```
 roslaunch mbot_gazebo view_mbot_with_laser_kinect.launch
 
 roslaunch mbot_navigation exploring_slam_demo.launch
 ```
-### SLAM + Navigation Automatically:
+##### SLAM + Navigation Automatically:
 ```
 roslaunch mbot_gazebo view_mbot_with_laser_kinect.launch
 
@@ -51,7 +51,7 @@ roslaunch mbot_navigation exploring_slam_demo.launch
 
 rosrun  mbot_navigation exploring_slam.py
 ```
-### Mask-rcnn
+##### Mask-rcnn
 ```
 roslaunch mbot_gazebo view_mbot_with_laser_kinect.launch
 

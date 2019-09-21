@@ -24,10 +24,12 @@ Also need to install [YOLO for ros](https://github.com/leggedrobotics/darknet_ro
 
 ## Demo
 All tasks are tested in a customized apartment in GAZEBO. The apartment looks like below:
-![](/images/apartment.png)
+
+<img src="images/apartment.png" >
 
 Also, the robot is defined by ourself and looks like below:
-![](/images/robot.png)
+
+<img src="images/robot.png" width="400">
 
 __**Click**__ below image you can see the robot explor and map the apartment automatically.
 
